@@ -1,0 +1,39 @@
+ARCHIVO DE CONFIGURACION INICIAL
+
+echo # Ejemplos >> README.md
+git init // para incializar el archivo de configuracion
+git add README.md  //para agregar archivos especificos
+git add . // agregar todo los archivos
+git commit -m "first commit" //creacion de commit
+git remote add origin https://github.com/Overprime/control-de-servicios.git // origen remoto
+
+Si sale este error:
+fatal: remote origin already exists
+
+git remote rm origin //para renombrar el repositorio
+git remote add origin https://github.com/Overprime/control-de-servicios.git // origen remoto
+
+Luego:
+git push -u origin master
+
+:D listo
+
+
+Eliminar un repositorio
+git rm nombre-del-archivo.extensión
+Luego seguimos el mismo proceso de subida
+
+
+Clonar repositorio:
+
+git clone https://github.com/Overprime/control-de-servicios.git
+
+git pull //para mantener actualizar el repositorio
+
+
+script php para git pull
+
+<?php 
+$out=shell_exec("/usr/bin/git pull 2>&1");
+var_dump($out);
+?>
